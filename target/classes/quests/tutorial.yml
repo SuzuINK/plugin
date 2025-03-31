@@ -1,0 +1,24 @@
+name: "Tutoriel"
+description: "Apprenez les bases du jeu en accomplissant cette quête"
+min_level: 1
+repeatable: false
+cooldown: 0
+max_completions: 1
+
+# Récompenses
+reward_exp: 100
+reward_money: 50
+
+# Objectifs
+objectives:
+  - "Tuez 5 zombies"
+  - "Collectez 10 minerais de fer"
+  - "Explorez la mine d'entraînement"
+
+# Restrictions
+required_quests: []
+required_items: []
+allowed_classes:
+  - "novice"
+allowed_ranks:
+  - "E" 
