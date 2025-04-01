@@ -1,0 +1,58 @@
+quests:
+  # Quêtes pour les armes de rang S
+  quest_epee_demoniaque:
+    name: "La Fleur de Prunier"
+    description: "Vaincre le Monarque des Ombres pour obtenir l'Épée démoniaque"
+    type: "KILL_BOSS"
+    required_amount: 1
+    target: "SHADOW_MONARCH"
+    reward_weapon: "epee_demoniaque"
+    tier: "S"
+
+  quest_faux_ombre:
+    name: "Moissonneur d'Âmes"
+    description: "Récolter 100 âmes de monstres de rang A ou supérieur"
+    type: "COLLECT_SOULS"
+    required_amount: 100
+    target: "RANK_A_SOULS"
+    reward_weapon: "faux_ombre"
+    tier: "S"
+
+  # Quêtes pour les armes de rang A
+  quest_glaive_roi_demons:
+    name: "Héritage du Roi Démon"
+    description: "Vaincre 50 démons de rang B ou supérieur"
+    type: "KILL_MONSTER"
+    required_amount: 50
+    target: "DEMON_B_PLUS"
+    reward_weapon: "glaive_roi_demons"
+    tier: "A"
+
+  quest_rage_vulcain:
+    name: "La Forge de Vulcain"
+    description: "Survivre dans un donjon de feu de rang A"
+    type: "COMPLETE_DUNGEON"
+    required_amount: 1
+    target: "FIRE_DUNGEON_A"
+    reward_weapon: "rage_vulcain"
+    tier: "A"
+
+  # Quêtes pour les armes de rang B
+  quest_epee_dragon:
+    name: "Écailles de Dragon"
+    description: "Collecter 30 écailles de dragon"
+    type: "COLLECT_ITEM"
+    required_amount: 30
+    target: "DRAGON_SCALE"
+    reward_weapon: "epee_dragon_etincelante"
+    tier: "B"
+
+  # Quêtes pour les armes de base
+  quest_equipement_base:
+    name: "L'Équipement du Chasseur"
+    description: "Compléter l'entraînement de base"
+    type: "COMPLETE_TRAINING"
+    required_amount: 1
+    target: "BASIC_TRAINING"
+    reward_weapon: "epee_acier"
+    tier: "C" 

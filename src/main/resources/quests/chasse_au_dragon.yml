@@ -1,0 +1,59 @@
+name: "Chasse au Dragon"
+description: "Vaincre le dragon du donjon et récupérer ses trésors"
+min_level: 10
+reward_exp: 500
+reward_money: 2500
+
+# Objectifs de la quête
+objectives:
+  - type: "KILL_MOB"
+    mob: "ENDER_DRAGON"
+    count: 1
+    description: "Vaincre le dragon"
+
+  - type: "COLLECT_ITEM"
+    item: "DRAGON_EGG"
+    count: 1
+    description: "Récupérer l'œuf du dragon"
+
+  - type: "COLLECT_ITEM"
+    item: "DRAGON_BREATH"
+    count: 3
+    description: "Récupérer 3 souffles de dragon"
+
+# Récompenses supplémentaires
+rewards:
+  - type: "ITEM"
+    item: "DIAMOND_SWORD"
+    count: 1
+    enchantments:
+      - "SHARPNESS:5"
+      - "FIRE_ASPECT:2"
+
+  - type: "ITEM"
+    item: "DIAMOND_ARMOR"
+    count: 1
+    enchantments:
+      - "PROTECTION:4"
+      - "UNBREAKING:3"
+
+# Conditions de la quête
+conditions:
+  - type: "PLAYER_LEVEL"
+    value: 10
+
+  - type: "PLAYER_RANK"
+    value: "D"
+
+# Donjon associé
+dungeon: "donjon_du_dragon"
+
+# Temps limite (en secondes)
+time_limit: 7200
+
+# Tags pour le système de quêtes
+tags:
+  - "DRAGON"
+  - "BOSS"
+  - "DUNGEON"
+  - "RARE" 

@@ -1,0 +1,151 @@
+name: "Mine Abandonnée"
+description: "Une ancienne mine envahie par des monstres corrompus"
+min_level: 5
+max_players: 4
+time_limit: 1800
+difficulty_multiplier: 1.2
+minimum_rank: "E"
+
+# Configuration du thème
+theme: "MINE"
+size: 3
+mob_density: 0.6
+loot_density: 0.5
+
+# Configuration des portails
+gate:
+  required_players: 1
+  requirements:
+    - "RANG_E"
+    - "QUETE_MINEUR_DEBUTANT"
+  rank_multipliers:
+    E: 1.0
+    D: 1.2
+    C: 1.5
+    B: 2.0
+    A: 2.5
+    S: 3.0
+
+# Récompenses de base
+base_reward_exp: 500
+base_reward_money: 250
+reward_items:
+  - item: "DIAMOND"
+    chance: 0.3
+    min_amount: 1
+    max_amount: 3
+  - item: "IRON_INGOT"
+    chance: 0.7
+    min_amount: 3
+    max_amount: 8
+  - item: "GOLDEN_APPLE"
+    chance: 0.2
+    min_amount: 1
+    max_amount: 2
+
+# Restrictions
+required_items:
+  - "IRON_PICKAXE"
+forbidden_items:
+  - "ENDER_PEARL"
+  - "ELYTRA"
+allowed_classes:
+  - "MINEUR"
+  - "GUERRIER"
+
+# Configuration des mobs
+mobs:
+  common:
+    - id: "ZOMBIE_MINEUR"
+      level: 5
+      chance: 0.4
+      count: 8
+      exp_reward: 50
+      money_reward: 25
+    - id: "SQUELETTE_MINEUR"
+      level: 6
+      chance: 0.3
+      count: 6
+      exp_reward: 60
+      money_reward: 30
+    - id: "CREEPER_CRISTAL"
+      level: 7
+      chance: 0.2
+      count: 4
+      exp_reward: 70
+      money_reward: 35
+  elite:
+    - id: "GOLEM_CORROMPU"
+      level: 10
+      chance: 0.1
+      count: 2
+      exp_reward: 200
+      money_reward: 100
+  boss:
+    id: "GOLEM_DE_PIERRE"
+    level: 15
+    exp_reward: 1000
+    money_reward: 500
+    rewards:
+      - item: "NETHERITE_PICKAXE"
+        chance: 0.1
+      - item: "DIAMOND_BLOCK"
+        chance: 0.5
+        amount: 3
+
+# Configuration des salles spéciales
+special_rooms:
+  boss_room:
+    size: 15
+    height: 8
+    decorations:
+      - type: "DIAMOND_ORE"
+        chance: 0.1
+      - type: "REDSTONE_TORCH"
+        chance: 0.2
+  treasure_room:
+    size: 8
+    height: 5
+    chest_count: 4
+    special_loot:
+      - item: "ENCHANTED_DIAMOND_PICKAXE"
+        chance: 0.3
+      - item: "ANCIENT_DEBRIS"
+        chance: 0.2
+        min_amount: 1
+        max_amount: 3
+
+# Configuration des événements
+events:
+  - type: "CAVE_IN"
+    trigger_chance: 0.1
+    interval: 300
+    warning_time: 10
+    exp_reward: 100
+    money_reward: 50
+  - type: "WATER_FLOOD"
+    trigger_chance: 0.15
+    interval: 400
+    duration: 100
+    exp_reward: 150
+    money_reward: 75
+  - type: "GAS_LEAK"
+    trigger_chance: 0.1
+    interval: 500
+    effect: "POISON"
+    duration: 200
+    exp_reward: 200
+    money_reward: 100
+
+# Portails
+portals:
+  entrance:
+    world: "world"
+    x: 100
+    y: 64
+    z: 100
+  exit:
+    world: "world"
+    x: 101
+    y: 64
+    z: 101 
