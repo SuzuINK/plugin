@@ -1,0 +1,185 @@
+# Compétences de base (Rang E)
+basic_skills:
+  - id: "RAGE"
+    name: "Rage"
+    description: "Augmente temporairement les dégâts et la vitesse d'attaque"
+    type: "ACTIVE"
+    level_requirement: 1
+    mana_cost: 20
+    cooldown: 30
+    damage_multiplier: 1.5
+    duration: 10
+    effects:
+      - type: "INCREASE_DAMAGE"
+        amplifier: 1
+        duration: 10
+      - type: "FAST_DIGGING"
+        amplifier: 1
+        duration: 10
+
+  - id: "SHIELD"
+    name: "Bouclier de Mana"
+    description: "Crée un bouclier qui absorbe les dégâts"
+    type: "ACTIVE"
+    level_requirement: 5
+    mana_cost: 30
+    cooldown: 45
+    damage_multiplier: 0.0
+    duration: 8
+    effects:
+      - type: "DAMAGE_RESISTANCE"
+        amplifier: 2
+        duration: 8
+
+# Compétences intermédiaires (Rang D)
+intermediate_skills:
+  - id: "TELEPORT"
+    name: "Téléportation"
+    description: "Se téléporte à l'endroit visé"
+    type: "ACTIVE"
+    level_requirement: 10
+    mana_cost: 25
+    cooldown: 15
+    damage_multiplier: 0.0
+    duration: 0
+    effects: []
+
+  - id: "HEAL"
+    name: "Soin"
+    description: "Restaure une partie de la vie"
+    type: "ACTIVE"
+    level_requirement: 15
+    mana_cost: 35
+    cooldown: 20
+    damage_multiplier: 0.0
+    duration: 0
+    effects: []
+
+# Compétences avancées (Rang C)
+advanced_skills:
+  - id: "METEOR"
+    name: "Météore"
+    description: "Invoque une pluie de météores"
+    type: "ULTIMATE"
+    level_requirement: 20
+    mana_cost: 50
+    cooldown: 120
+    damage_multiplier: 2.5
+    duration: 5
+    effects:
+      - type: "SLOW"
+        amplifier: 2
+        duration: 5
+
+  - id: "BERSERK"
+    name: "Berserk"
+    description: "Augmente considérablement les dégâts mais réduit la défense"
+    type: "ACTIVE"
+    level_requirement: 25
+    mana_cost: 40
+    cooldown: 60
+    damage_multiplier: 3.0
+    duration: 15
+    effects:
+      - type: "INCREASE_DAMAGE"
+        amplifier: 3
+        duration: 15
+      - type: "DAMAGE_RESISTANCE"
+        amplifier: -2
+        duration: 15
+
+# Compétences expertes (Rang B)
+expert_skills:
+  - id: "TIME_STOP"
+    name: "Arrêt du Temps"
+    description: "Ralentit le temps autour de soi"
+    type: "ULTIMATE"
+    level_requirement: 30
+    mana_cost: 60
+    cooldown: 180
+    damage_multiplier: 1.0
+    duration: 8
+    effects:
+      - type: "SLOW"
+        amplifier: 4
+        duration: 8
+
+  - id: "SHADOW_CLONE"
+    name: "Clone d'Ombre"
+    description: "Crée des clones qui attaquent les ennemis"
+    type: "ACTIVE"
+    level_requirement: 35
+    mana_cost: 45
+    cooldown: 90
+    damage_multiplier: 1.5
+    duration: 12
+    effects: []
+
+# Compétences légendaires (Rang A)
+legendary_skills:
+  - id: "DRAGON_BREATH"
+    name: "Souffle du Dragon"
+    description: "Lance un puissant souffle de dragon"
+    type: "ULTIMATE"
+    level_requirement: 40
+    mana_cost: 70
+    cooldown: 240
+    damage_multiplier: 4.0
+    duration: 3
+    effects:
+      - type: "SLOW"
+        amplifier: 3
+        duration: 5
+      - type: "WEAKNESS"
+        amplifier: 2
+        duration: 5
+
+  - id: "IMMORTALITY"
+    name: "Immortalité"
+    description: "Rend temporairement invincible"
+    type: "ULTIMATE"
+    level_requirement: 45
+    mana_cost: 80
+    cooldown: 300
+    damage_multiplier: 0.0
+    duration: 5
+    effects:
+      - type: "DAMAGE_RESISTANCE"
+        amplifier: 5
+        duration: 5
+
+# Compétences mythiques (Rang S)
+mythic_skills:
+  - id: "REALM_CONTROL"
+    name: "Contrôle du Royaume"
+    description: "Prend le contrôle total de la zone"
+    type: "ULTIMATE"
+    level_requirement: 50
+    mana_cost: 100
+    cooldown: 360
+    damage_multiplier: 5.0
+    duration: 10
+    effects:
+      - type: "INCREASE_DAMAGE"
+        amplifier: 4
+        duration: 10
+      - type: "DAMAGE_RESISTANCE"
+        amplifier: 3
+        duration: 10
+      - type: "SPEED"
+        amplifier: 2
+        duration: 10
+
+  - id: "DIMENSION_SLASH"
+    name: "Entaille Dimensionnelle"
+    description: "Crée une entaille dans l'espace-temps"
+    type: "ULTIMATE"
+    level_requirement: 55
+    mana_cost: 90
+    cooldown: 300
+    damage_multiplier: 6.0
+    duration: 2
+    effects:
+      - type: "SLOW"
+        amplifier: 5
+        duration: 5 

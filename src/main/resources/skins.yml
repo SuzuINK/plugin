@@ -1,0 +1,32 @@
+# Configuration des skins pour les monstres et les portails
+# Format: nom_du_skin: url_du_skin
+
+# Skins des monstres
+monsters:
+  zombie:
+    default: "https://textures.minecraft.net/texture/54fcbe3f502442248785a1b9018d1726a774a47d53c8ff0b7d8aedf7fc0ad394"
+    rare: "https://textures.minecraft.net/texture/2b0c5c0c5c0c5c0c5c0c5c0c5c0c5c0c"
+    epic: "https://textures.minecraft.net/texture/3c0c5c0c5c0c5c0c5c0c5c0c5c0c5c0c"
+  skeleton:
+    default: "https://textures.minecraft.net/texture/301268e9c492da1f0d88271d24a05b0bd8e3c79ab2f3a7f43a1722c8b5b93842"
+    rare: "https://textures.minecraft.net/texture/4b0c5c0c5c0c5c0c5c0c5c0c5c0c5c0c"
+    epic: "https://textures.minecraft.net/texture/5c0c5c0c5c0c5c0c5c0c5c0c5c0c5c0c"
+  spider:
+    default: "https://textures.minecraft.net/texture/cd541541daaff50896cd258b6dd5e41b5e2ec804417463fb32e9ea8c1a0c17d"
+    rare: "https://textures.minecraft.net/texture/6b0c5c0c5c0c5c0c5c0c5c0c5c0c5c0c"
+    epic: "https://textures.minecraft.net/texture/7c0c5c0c5c0c5c0c5c0c5c0c5c0c5c0c"
+  creeper:
+    default: "https://textures.minecraft.net/texture/3edd20be93520949e6ce789dc4f43efaeb28c717ee6bfcbbe02780142f716"
+    rare: "https://textures.minecraft.net/texture/8b0c5c0c5c0c5c0c5c0c5c0c5c0c5c0c"
+    epic: "https://textures.minecraft.net/texture/9c0c5c0c5c0c5c0c5c0c5c0c5c0c5c0c"
+
+# Skins des portails
+portals:
+  entrance:
+    default: "https://textures.minecraft.net/texture/2b0c5c0c5c0c5c0c5c0c5c0c5c0c5c0c"
+    rare: "https://textures.minecraft.net/texture/3c0c5c0c5c0c5c0c5c0c5c0c5c0c5c0c"
+    epic: "https://textures.minecraft.net/texture/4d0c5c0c5c0c5c0c5c0c5c0c5c0c5c0c"
+  exit:
+    default: "https://textures.minecraft.net/texture/5e0c5c0c5c0c5c0c5c0c5c0c5c0c5c0c"
+    rare: "https://textures.minecraft.net/texture/6f0c5c0c5c0c5c0c5c0c5c0c5c0c5c0c"
+    epic: "https://textures.minecraft.net/texture/7g0c5c0c5c0c5c0c5c0c5c0c5c0c5c0c" 

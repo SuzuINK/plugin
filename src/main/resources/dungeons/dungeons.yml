@@ -1,0 +1,118 @@
+dungeons:
+  cartenon_temple:
+    name: "Temple de Cartenon"
+    rank: S
+    boss: "Kandiaru"
+    mobs:
+      - "Demonic Spectre"
+    portal_type: "rank_portal"
+
+  penalty_zone:
+    name: "Zone de Pénalité"
+    rank: B
+    boss: "Giant Desert Centipede"
+    mobs:
+      - "Poisoned Centipede"
+    portal_type: "dungeon_portal"
+
+  hapjeong_subway:
+    name: "Station de Métro Hapjeong"
+    rank: D
+    boss: "Blue Venom-Fanged Kasaka"
+    mobs:
+      - "Steel-Fanged Raikan"
+      - "Razor-Clawed Briga"
+      - "Black-Shadow Razan"
+    portal_type: "dungeon_portal"
+
+  insect_dungeon:
+    name: "Donjon des Insectes"
+    rank: C
+    boss: "Giant Arachnid Buryura"
+    mobs:
+      - "Spider Warrior"
+    portal_type: "dungeon_portal"
+
+  demon_castle:
+    name: "Château des Démons"
+    rank: S
+    boss: "Vulcan"
+    mobs:
+      - "Vulcan's Guards"
+      - "Metus"
+      - "Esil Radiru"
+      - "Kaisellin"
+    portal_type: "rank_portal"
+
+  goblin_dungeon:
+    name: "Donjon des Gobelins"
+    rank: E
+    boss: "Goblin Chief"
+    mobs:
+      - "Goblin Warrior"
+      - "Goblin Archer"
+      - "Goblin Mage"
+    portal_type: "dungeon_portal"
+
+  job_change_dungeon:
+    name: "Donjon du Changement de Classe"
+    rank: B
+    boss: "Blood-Red Commander Igris"
+    mobs:
+      - "Knights"
+      - "Magicians"
+      - "Assassins"
+      - "Archers"
+    portal_type: "dungeon_portal"
+
+  red_gate:
+    name: "Porte Rouge"
+    rank: B
+    boss: "Baruka"
+    mobs:
+      - "Ice Elves"
+      - "Ice Bears"
+      - "Yetis"
+    portal_type: "rank_portal"
+
+  hunters_guild_gate:
+    name: "Porte de la Guilde des Chasseurs"
+    rank: S
+    boss: "Kargalgan"
+    mobs:
+      - "High Orcs"
+      - "Dungeon Jackals"
+    portal_type: "rank_portal"
+
+  jeju_island_gate:
+    name: "Porte de l'Île de Jeju"
+    rank: S
+    boss: "Ant King"
+    mobs:
+      - "Giant Ants"
+    portal_type: "rank_portal"
+
+  first_s_rank_gate:
+    name: "Première Porte de Rang S"
+    rank: S
+    boss: "Kamish"
+    mobs:
+      - "Dragon Warriors"
+    portal_type: "rank_portal"
+
+  busan_a_rank_gate:
+    name: "Porte de Rang A de Busan"
+    rank: A
+    boss: "Arch Lich"
+    mobs:
+      - "Twin-Headed Ogres"
+      - "Undead Warriors"
+    portal_type: "rank_portal"
+
+  tokyo_gate:
+    name: "Porte de Tokyo"
+    rank: S
+    boss: "Giants"
+    mobs:
+      - "Giant Warriors"
+    portal_type: "rank_portal" 

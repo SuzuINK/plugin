@@ -1,0 +1,188 @@
+# Configuration du plugin ReveilDesChasseurs
+
+# Configuration des classes
+classes:
+  guerrier:
+    description: "Un combattant puissant qui excelle au corps à corps"
+    base_health: 20
+    base_damage: 5
+    abilities:
+      - "charge"
+      - "sweep"
+      - "shockwave"
+  archer:
+    description: "Un tireur d'élite qui excelle à distance"
+    base_health: 16
+    base_damage: 4
+    abilities:
+      - "multishot"
+      - "poison_arrow"
+      - "explosive_arrow"
+  mage:
+    description: "Un lanceur de sorts qui maîtrise la magie"
+    base_health: 14
+    base_damage: 3
+    abilities:
+      - "fireball"
+      - "ice_nova"
+      - "lightning_bolt"
+  assassin:
+    description: "Un tueur furtif qui excelle dans l'infiltration"
+    base_health: 15
+    base_damage: 6
+    abilities:
+      - "stealth"
+      - "backstab"
+      - "smoke_bomb"
+
+# Configuration des rangs
+ranks:
+  novice:
+    description: "Un débutant qui commence son aventure"
+    required_level: 0
+    dungeon_multiplier: 1.0
+  apprenti:
+    description: "Un aventurier qui a fait ses preuves"
+    required_level: 10
+    dungeon_multiplier: 1.2
+  expert:
+    description: "Un combattant expérimenté"
+    required_level: 25
+    dungeon_multiplier: 1.5
+  maître:
+    description: "Un vétéran respecté"
+    required_level: 50
+    dungeon_multiplier: 2.0
+  grand_maître:
+    description: "Une légende vivante"
+    required_level: 100
+    dungeon_multiplier: 3.0
+
+# Configuration des donjons
+dungeons:
+  # Paramètres généraux
+  world_name: "dungeons"
+  max_instances: 10
+  cleanup_interval: 300 # En secondes
+  
+  # Système de rangs
+  ranks:
+    E:
+      name: "Rang E"
+      color: "§7" # Gris
+      difficulty_multiplier: 1.0
+      min_players: 1
+      max_players: 4
+      base_reward_exp: 100
+      base_reward_money: 50
+    D:
+      name: "Rang D"
+      color: "§a" # Vert
+      difficulty_multiplier: 1.5
+      min_players: 2
+      max_players: 4
+      base_reward_exp: 300
+      base_reward_money: 150
+    C:
+      name: "Rang C"
+      color: "§b" # Bleu clair
+      difficulty_multiplier: 2.0
+      min_players: 3
+      max_players: 5
+      base_reward_exp: 600
+      base_reward_money: 300
+    B:
+      name: "Rang B"
+      color: "§9" # Bleu
+      difficulty_multiplier: 2.5
+      min_players: 4
+      max_players: 6
+      base_reward_exp: 1000
+      base_reward_money: 500
+    A:
+      name: "Rang A"
+      color: "§d" # Rose
+      difficulty_multiplier: 3.0
+      min_players: 5
+      max_players: 8
+      base_reward_exp: 2000
+      base_reward_money: 1000
+    S:
+      name: "Rang S"
+      color: "§c" # Rouge
+      difficulty_multiplier: 4.0
+      min_players: 8
+      max_players: 10
+      base_reward_exp: 5000
+      base_reward_money: 2500
+  
+  # Configuration des portails
+  portals:
+    entrance:
+      particle: "PORTAL"
+      sound: "BLOCK_PORTAL_TRIGGER"
+      duration: 60 # Ticks
+      radius: 2
+    exit:
+      particle: "END_ROD"
+      sound: "BLOCK_END_PORTAL_SPAWN"
+      duration: 60
+      radius: 2
+  
+  # Récompenses de base
+  base_rewards:
+    experience: 1000
+    money: 500
+  
+  # Multiplicateurs de difficulté
+  difficulty_multipliers:
+    easy: 1.0
+    medium: 1.5
+    hard: 2.0
+    expert: 3.0
+
+# Configuration des mobs
+mobs:
+  normal:
+    health_multiplier: 1.0
+    damage_multiplier: 1.0
+    experience: 100
+    money: 50
+  elite:
+    health_multiplier: 2.0
+    damage_multiplier: 1.5
+    experience: 500
+    money: 250
+  boss:
+    health_multiplier: 5.0
+    damage_multiplier: 2.0
+    experience: 1000
+    money: 500
+
+# Configuration des messages
+messages:
+  prefix: "&6[ReveilDesChasseurs] &r"
+  dungeon:
+    enter: "&aVous entrez dans le donjon {dungeon}"
+    leave: "&aVous quittez le donjon {dungeon}"
+    complete: "&aFélicitations ! Vous avez terminé le donjon {dungeon}"
+    fail: "&cVous avez échoué dans le donjon {dungeon}"
+    time_remaining: "&eTemps restant : {time}"
+  quest:
+    accept: "&aVous acceptez la quête {quest}"
+    complete: "&aVous terminez la quête {quest}"
+    abandon: "&cVous abandonnez la quête {quest}"
+    progress: "&eProgression de la quête {quest} : {progress}%"
+  class:
+    change: "&aVotre classe a été changée en {class}"
+    invalid: "&cClasse invalide. Classes disponibles : guerrier, archer, mage, assassin"
+  rank:
+    change: "&aVotre rang a été changé en {rank}"
+    invalid: "&cRang invalide. Rangs disponibles : novice, apprenti, expert, maître, grand maître"
+  error:
+    no_permission: "&cVous n'avez pas la permission d'utiliser cette commande"
+    player_only: "&cCette commande ne peut être utilisée que par un joueur"
+    dungeon_full: "&cCe donjon est plein"
+    level_required: "&cVous devez être niveau {level} pour entrer dans ce donjon"
+    class_required: "&cVotre classe ne peut pas entrer dans ce donjon"
+    rank_required: "&cVotre rang ne peut pas entrer dans ce donjon" 

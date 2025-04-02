@@ -1,0 +1,86 @@
+menus:
+  menu_principal:
+    title: "&6Menu Principal"
+    size: 27
+    items:
+      dungeons:
+        material: NETHER_BRICK
+        name: "&cDonjons"
+        lore:
+          - "&7Accédez à la liste des donjons"
+          - "&7disponibles pour votre niveau."
+        slot: 11
+        actions:
+          click:
+            - "open_menu:menu_donjons"
+      profile:
+        material: PLAYER_HEAD
+        name: "&aProfil"
+        lore:
+          - "&7Consultez votre profil"
+          - "&7et vos statistiques."
+        slot: 13
+        actions:
+          click:
+            - "open_menu:menu_profil"
+      quests:
+        material: BOOK
+        name: "&eQuêtes"
+        lore:
+          - "&7Voir vos quêtes en cours"
+          - "&7et disponibles."
+        slot: 15
+        actions:
+          click:
+            - "open_menu:menu_quetes"
+
+  menu_donjons:
+    title: "&cDonjons Disponibles"
+    size: 54
+    items:
+      back:
+        material: BARRIER
+        name: "&cRetour"
+        lore:
+          - "&7Retourner au menu principal"
+        slot: 49
+        actions:
+          click:
+            - "open_menu:menu_principal"
+
+  menu_profil:
+    title: "&aProfil de %player_name%"
+    size: 27
+    items:
+      player_head:
+        material: PLAYER_HEAD
+        name: "&6%player_name%"
+        lore:
+          - "&fNiveau: &e%player_level%"
+          - "&fXP: &e%player_exp%&7/&e%player_next_level_exp%"
+          - "&fClasse: &e%player_class%"
+          - "&fRang: &e%player_rank%"
+        slot: 13
+      back:
+        material: BARRIER
+        name: "&cRetour"
+        lore:
+          - "&7Retourner au menu principal"
+        slot: 26
+        actions:
+          click:
+            - "open_menu:menu_principal"
+
+  menu_quetes:
+    title: "&eQuêtes"
+    size: 54
+    items:
+      back:
+        material: BARRIER
+        name: "&cRetour"
+        lore:
+          - "&7Retourner au menu principal"
+        slot: 49
+        actions:
+          click:
+            - "open_menu:menu_principal" 
