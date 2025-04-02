@@ -1,0 +1,82 @@
+# Messages d'aide pour les commandes
+
+# Commandes générales
+help: |
+  &6=== Aide de ReveilDesChasseurs ===
+  &7Utilisez &e/help <commande> &7pour plus d'informations sur une commande spécifique.
+
+# Commandes de donjon
+dungeon: |
+  &6=== Commandes de donjon ===
+  &e/dungeon enter <nom> &7- Entrer dans un donjon
+  &e/dungeon leave &7- Quitter le donjon actuel
+  &e/dungeon list &7- Afficher la liste des donjons disponibles
+  &e/dungeon info <nom> &7- Afficher les informations d'un donjon
+
+# Commandes de quête
+quest: |
+  &6=== Commandes de quête ===
+  &e/quest accept <nom> &7- Accepter une quête
+  &e/quest abandon <nom> &7- Abandonner une quête
+  &e/quest complete <nom> &7- Compléter une quête
+  &e/quest list &7- Afficher la liste des quêtes disponibles
+  &e/quest info <nom> &7- Afficher les informations d'une quête
+
+# Commandes de profil
+profile: |
+  &6=== Commandes de profil ===
+  &e/profile view &7- Afficher votre profil
+  &e/profile edit &7- Modifier votre profil
+
+# Commandes de classe
+class: |
+  &6=== Commandes de classe ===
+  &e/class set <classe> &7- Changer votre classe
+  &e/class list &7- Afficher la liste des classes disponibles
+  &e/class info <classe> &7- Afficher les informations d'une classe
+
+# Commandes de rang
+rank: |
+  &6=== Commandes de rang ===
+  &e/rank set <rang> &7- Changer votre rang
+  &e/rank list &7- Afficher la liste des rangs disponibles
+  &e/rank info <rang> &7- Afficher les informations d'un rang
+
+# Commandes d'économie
+money: |
+  &6=== Commandes d'économie ===
+  &e/money give <joueur> <montant> &7- Donner de l'argent à un joueur
+  &e/money set <joueur> <montant> &7- Définir l'argent d'un joueur
+  &e/money info <joueur> &7- Afficher les informations d'argent d'un joueur
+
+# Commandes d'expérience
+exp: |
+  &6=== Commandes d'expérience ===
+  &e/exp give <joueur> <montant> &7- Donner de l'expérience à un joueur
+  &e/exp set <joueur> <montant> &7- Définir l'expérience d'un joueur
+  &e/exp info <joueur> &7- Afficher les informations d'expérience d'un joueur
+
+# Commandes de boutique
+shop: |
+  &6=== Commandes de boutique ===
+  &e/shop &7- Ouvrir la boutique
+
+# Commandes d'armes
+weapon: |
+  &6=== Commandes d'armes ===
+  &e/weapon give <nom> &7- Donner une arme
+  &e/weapon list &7- Afficher la liste des armes disponibles
+  &e/weapon info <nom> &7- Afficher les informations d'une arme
+
+# Commandes d'inventaire
+inventory: |
+  &6=== Commandes d'inventaire ===
+  &e/inventory save &7- Sauvegarder votre inventaire
+  &e/inventory load &7- Charger votre inventaire sauvegardé
+  &e/inventory clear &7- Vider votre inventaire
+
+# Commandes de configuration
+config: |
+  &6=== Commandes de configuration ===
+  &e/config reload &7- Recharger la configuration
+  &e/config save &7- Sauvegarder la configuration 

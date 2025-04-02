@@ -1,0 +1,72 @@
+# Configuration des armes personnalisées
+
+# Épée de chasseur
+hunter_sword:
+  name: "Épée de chasseur"
+  description: "Une épée forgée spécialement pour la chasse aux monstres"
+  damage: 8.0
+  attackSpeed: 1.6
+  abilities:
+    - "§6Chasseur: §7+20% de dégâts contre les monstres"
+    - "§6Vampire: §7Vol de vie de 5% des dégâts"
+
+# Arc de chasseur
+hunter_bow:
+  name: "Arc de chasseur"
+  description: "Un arc spécialement conçu pour la chasse"
+  level: 3
+  required_level: 10
+  damage: 8.0
+  durability: 150
+  price: 300
+  material: "BOW"
+
+# Bâton de mage
+mage_staff:
+  name: "Bâton de mage"
+  description: "Un bâton magique qui canalise la puissance des éléments"
+  damage: 7.0
+  attackSpeed: 1.4
+  abilities:
+    - "§6Explosion: §7Crée une explosion de feu"
+    - "§6Gel: §7Ralentit les ennemis touchés"
+
+# Dague d'assassin
+assassin_dagger:
+  name: "Dague d'assassin"
+  description: "Une dague mortelle utilisée pour les attaques furtives"
+  damage: 9.0
+  attackSpeed: 2.0
+  abilities:
+    - "§6Furtivité: §7+30% de dégâts en attaquant par derrière"
+    - "§6Sang: §7Saignement qui inflige des dégâts sur la durée"
+
+basic_sword:
+  name: "Épée de base"
+  description: "Une épée simple pour débuter"
+  level: 1
+  required_level: 1
+  damage: 5.0
+  durability: 100
+  price: 100
+  material: "IRON_SWORD"
+
+advanced_sword:
+  name: "Épée avancée"
+  description: "Une épée plus puissante"
+  level: 2
+  required_level: 5
+  damage: 10.0
+  durability: 200
+  price: 500
+  material: "DIAMOND_SWORD"
+
+magic_staff:
+  name: "Bâton magique"
+  description: "Un bâton capable de lancer des sorts"
+  level: 4
+  required_level: 15
+  damage: 12.0
+  durability: 250
+  price: 800
+  material: "BLAZE_ROD" 

@@ -1,0 +1,84 @@
+# Configuration du donjon 1
+# Structure de base
+0,0,0:
+  type: STONE_BRICKS
+  data: ""
+  rotation: ""
+  facing: ""
+  entities: ["ZOMBIE:3", "SKELETON:2"]
+
+0,1,0:
+  type: STONE_BRICKS
+  data: ""
+  rotation: ""
+  facing: ""
+
+0,2,0:
+  type: STONE_BRICKS
+  data: ""
+  rotation: ""
+  facing: ""
+
+1,0,0:
+  type: STONE_BRICKS
+  data: ""
+  rotation: ""
+  facing: ""
+
+1,1,0:
+  type: AIR
+  data: ""
+  rotation: ""
+  facing: ""
+
+1,2,0:
+  type: STONE_BRICKS
+  data: ""
+  rotation: ""
+  facing: ""
+
+2,0,0:
+  type: STONE_BRICKS
+  data: ""
+  rotation: ""
+  facing: ""
+
+2,1,0:
+  type: STONE_BRICKS
+  data: ""
+  rotation: ""
+  facing: ""
+
+2,2,0:
+  type: STONE_BRICKS
+  data: ""
+  rotation: ""
+  facing: ""
+
+# Porte d'entrée
+1,0,1:
+  type: OAK_DOOR
+  data: ""
+  rotation: ""
+  facing: "NORTH"
+
+# Torches
+0,1,1:
+  type: WALL_TORCH
+  data: ""
+  rotation: ""
+  facing: "WEST"
+
+2,1,1:
+  type: WALL_TORCH
+  data: ""
+  rotation: ""
+  facing: "EAST"
+
+# Coffre au trésor
+1,0,2:
+  type: CHEST
+  data: ""
+  rotation: ""
+  facing: "NORTH"
+  entities: ["ZOMBIE:1"] 

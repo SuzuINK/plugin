@@ -1,0 +1,107 @@
+name: ReveilDesChasseurs
+version: 1.0.0
+main: fr.akashisei.reveildeschasseurs.ReveilDesChasseurs
+api-version: 1.13
+depend:
+  - MythicMobs
+  - ItemsAdder
+  - DeluxeMenus
+  - Multiverse-Core
+softdepend:
+  - ExecutableItems
+  - CustomGUI
+  - UltraCustomizer
+authors: [AkashiSei]
+description: Plugin de chasse aux monstres avec système de quêtes
+
+commands:
+  dungeon:
+    description: Gère les donjons
+    usage: /<command> [enter|list|info] [nom]
+    aliases: [donjon, donjons]
+  quest:
+    description: Ouvre le menu des quêtes
+    usage: /<command>
+    aliases: [quete, quetes]
+  profile:
+    description: Commande pour gérer votre profil
+    usage: /profile [view|edit]
+    permission: reveildeschasseurs.command.profile
+  class:
+    description: Gère les classes
+    usage: /<command> [set|list|info] [joueur] [classe]
+    aliases: [classe, classes]
+  rank:
+    description: Gère les rangs
+    usage: /<command> [set|list|info] [joueur] [rang]
+    aliases: [rang, rangs]
+  money:
+    description: Gère l'argent
+    usage: /<command> [give|set|info] [joueur] [montant]
+    aliases: [argent, monnaie]
+  weapon:
+    description: Gère les armes personnalisées
+    usage: /<command> [give|list|info] [nom]
+    aliases: [arme, armes]
+  exp:
+    description: Gère l'expérience
+    usage: /<command> [give|set|info] [joueur] [montant]
+    aliases: [xp, experience]
+  shop:
+    description: Ouvre la boutique
+    usage: /<command>
+    aliases: [boutique]
+  inventory:
+    description: Gère l'inventaire
+    usage: /<command> [save|load|clear]
+    aliases: [inv, inventaire]
+  config:
+    description: Gère la configuration
+    usage: /<command> [reload|save]
+    aliases: [cfg, configuration]
+    permission: reveildeschasseurs.admin
+  help:
+    description: Affiche l'aide
+    usage: /<command> [commande]
+    aliases: [aide, ?]
+
+permissions:
+  reveildeschasseurs.admin:
+    description: Permet d'utiliser toutes les commandes d'administration
+    default: op
+  reveildeschasseurs.command.profile:
+    description: Permet d'utiliser les commandes de profil
+    default: true
+  reveildeschasseurs.command.dungeon:
+    description: Permet d'utiliser les commandes de donjon
+    default: true
+  reveildeschasseurs.command.quest:
+    description: Permet d'utiliser les commandes de quête
+    default: true
+  reveildeschasseurs.command.class:
+    description: Permet d'utiliser les commandes de classe
+    default: true
+  reveildeschasseurs.command.rank:
+    description: Permet d'utiliser les commandes de rang
+    default: true
+  reveildeschasseurs.command.money:
+    description: Permet d'utiliser les commandes d'argent
+    default: true
+  reveildeschasseurs.command.weapon:
+    description: Permet d'utiliser les commandes d'armes
+    default: true
+  reveildeschasseurs.command.exp:
+    description: Permet d'utiliser les commandes d'expérience
+    default: true
+  reveildeschasseurs.command.shop:
+    description: Permet d'utiliser les commandes de boutique
+    default: true
+  reveildeschasseurs.command.inventory:
+    description: Permet d'utiliser les commandes d'inventaire
+    default: true
+  reveildeschasseurs.command.config:
+    description: Permet d'utiliser les commandes de configuration
+    default: op
+  reveildeschasseurs.command.help:
+    description: Permet d'utiliser les commandes d'aide
+    default: true 

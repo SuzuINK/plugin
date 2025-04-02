@@ -1,0 +1,204 @@
+mobs:
+  # Rang S
+  kandiaru:
+    name: "Kandiaru"
+    type: "DEMONIC"
+    rank: "S"
+    health: 10000
+    damage: 500
+    abilities:
+      - "SHADOW_MANIPULATION"
+      - "SPECTRAL_FORM"
+    skin: "kandiaru.png"
+    effects:
+      - "PURPLE_AURA"
+      - "FLOATING"
+
+  vulcan:
+    name: "Vulcan"
+    type: "DEMON"
+    rank: "S"
+    health: 12000
+    damage: 600
+    abilities:
+      - "HELLFIRE"
+      - "DEMON_FORM"
+    skin: "vulcan.png"
+    effects:
+      - "FIRE_AURA"
+      - "LAVA_TRAIL"
+
+  ant_king:
+    name: "Ant King"
+    type: "INSECT"
+    rank: "S"
+    health: 15000
+    damage: 700
+    abilities:
+      - "ACID_SPRAY"
+      - "SWARM_CONTROL"
+    skin: "ant_king.png"
+    effects:
+      - "ACID_DRIP"
+      - "GROUND_CRACK"
+
+  # Rang A
+  blood_red_commander_igris:
+    name: "Blood-Red Commander Igris"
+    type: "HUMANOID"
+    rank: "A"
+    health: 8000
+    damage: 400
+    abilities:
+      - "SWORD_MASTERY"
+      - "SHADOW_STEP"
+    skin: "igris.png"
+    effects:
+      - "RED_AURA"
+      - "SWORD_TRAIL"
+
+  cerberus:
+    name: "Cerberus"
+    type: "BEAST"
+    rank: "A"
+    health: 7500
+    damage: 450
+    abilities:
+      - "TRIPLE_BITE"
+      - "HELLFIRE_BREATH"
+    skin: "cerberus.png"
+    effects:
+      - "FIRE_TRAIL"
+      - "MULTIPLE_HEADS"
+
+  # Rang B
+  ice_elves:
+    name: "Ice Elves"
+    type: "SNOW_FOLK"
+    rank: "B"
+    health: 5000
+    damage: 300
+    abilities:
+      - "ICE_ARROW"
+      - "FROST_SHIELD"
+    skin: "ice_elf.png"
+    effects:
+      - "FROST_AURA"
+      - "SNOW_TRAIL"
+
+  magicians:
+    name: "Magicians"
+    type: "HUMANOID"
+    rank: "B"
+    health: 4000
+    damage: 350
+    abilities:
+      - "MAGIC_BOLT"
+      - "TELEPORT"
+    skin: "magician.png"
+    effects:
+      - "MAGIC_SPARKLES"
+      - "LEVITATION"
+
+  # Rang C
+  giant_arachnid:
+    name: "Giant Arachnid Buryura"
+    type: "INSECT"
+    rank: "C"
+    health: 3000
+    damage: 250
+    abilities:
+      - "WEB_SHOT"
+      - "POISON_BITE"
+    skin: "giant_spider.png"
+    effects:
+      - "WEB_TRAIL"
+      - "POISON_DRIP"
+
+  werewolves:
+    name: "Werewolves"
+    type: "BEAST"
+    rank: "C"
+    health: 2500
+    damage: 200
+    abilities:
+      - "FERAL_SLASH"
+      - "HOWL"
+    skin: "werewolf.png"
+    effects:
+      - "MOON_AURA"
+      - "FUR_PARTICLE"
+
+  # Rang D
+  steel_fanged_raikan:
+    name: "Steel-Fanged Raikan"
+    type: "BEAST"
+    rank: "D"
+    health: 1500
+    damage: 150
+    abilities:
+      - "STEEL_BITE"
+    skin: "raikan.png"
+    effects:
+      - "METAL_SPARKLE"
+
+  # Rang E
+  goblins:
+    name: "Goblin"
+    type: "HUMANOID"
+    rank: "E"
+    health: 800
+    damage: 50
+    abilities:
+      - "BASIC_ATTACK"
+    skin: "goblin.png"
+    effects:
+      - "NONE"
+
+# Configuration des effets spéciaux par rang
+rank_effects:
+  S:
+    aura_size: 2.0
+    particle_density: "HIGH"
+    sound_volume: 1.0
+    ground_effect: true
+  A:
+    aura_size: 1.5
+    particle_density: "MEDIUM"
+    sound_volume: 0.8
+    ground_effect: true
+  B:
+    aura_size: 1.0
+    particle_density: "MEDIUM"
+    sound_volume: 0.6
+    ground_effect: false
+  C:
+    aura_size: 0.8
+    particle_density: "LOW"
+    sound_volume: 0.4
+    ground_effect: false
+  D:
+    aura_size: 0.5
+    particle_density: "LOW"
+    sound_volume: 0.3
+    ground_effect: false
+  E:
+    aura_size: 0.3
+    particle_density: "MINIMAL"
+    sound_volume: 0.2
+    ground_effect: false
+
+# Types de particules et effets
+effects:
+  PURPLE_AURA:
+    particle: "PORTAL"
+    color: "PURPLE"
+  FIRE_AURA:
+    particle: "FLAME"
+    color: "RED"
+  FROST_AURA:
+    particle: "SNOW_SHOVEL"
+    color: "CYAN"
+  SHADOW_AURA:
+    particle: "SMOKE_NORMAL"
+    color: "BLACK" 
